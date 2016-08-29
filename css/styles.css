@@ -1,0 +1,30 @@
+* {
+margin: 0
+}
+
+
+
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+}
+
+#content{
+	height: 150px;
+	background: blue;
+
+}
+#parallax {
+
+  	background: red;
+		height: 150px;
+  	background: url(http://www.verticalworld.net/school/programs/uploads/pics/program_108_1.jpg) ;
+    background-repeat: repeat-y;
+    background-position: center;
+	 	background-attachment: fixed;
+		background-size:  contain;
+
+}
+.download-message {
+    display: none;
+}
