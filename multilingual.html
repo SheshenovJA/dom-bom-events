@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Multi lang </title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="js/mult.js"></script>
+  </head>
+  <body>
+  <fieldset>
+    <legend>Language switcher</legend>
+<label for="ukr">
+  <input type="radio" name="lang" onchange="swapLng(this)" checked="checked" id="ukr">UA
+</label>
+<label for="rus">
+  <input type="radio" name="lang" onchange="swapLng(this)" id="rus">RUS
+</label>
+<label for="eng">
+  <input type="radio" name="lang" onchange="swapLng(this)" id="eng">ENG
+</label>
+</div>
+
+  <div id="ukrSetting">
+    Привіт username,
+    <p>
+      <label for="p1">Раді тебе бачити!</label>
+      </p>
+  </div>
+  <div id="rusSetting" style="display:none">
+    Привет username,
+    <p>
+      <label for="d1">Рады тебя видеть</label>
+    </p>
+  </div>
+  <div id="engSetting" style="display:none">
+  Hello username,
+    <p>
+      <label for="a1">We glad to see you</label>
+
+    </p>
+  </div>
+  <div id="betaSettings" style="display:none">
+    <br/>Beta Settings
+    <p>
+      <label for="b1">Beta</label>
+
+      </p>
+  </div>
+
+
+<button id="save">Save</button>
+</fieldset>
+  </body>
+</html>
