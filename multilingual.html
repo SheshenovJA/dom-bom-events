@@ -5,20 +5,22 @@
     <title>Multi lang </title>
     <link rel="stylesheet" href="css/styles.css"/>
     <script src="js/mult.js"></script>
+
+
   </head>
   <body>
   <fieldset>
     <legend>Language switcher</legend>
 <label for="ukr">
-  <input type="radio" name="lang" onchange="swapLng(this)" checked="checked" id="ukr">UA
+  <input type="radio" name="lang" onclick="swapLng(this)" id="ukr">UA
 </label>
 <label for="rus">
-  <input type="radio" name="lang" onchange="swapLng(this)" id="rus">RUS
+  <input type="radio" name="lang" onclick="swapLng(this)" id="rus">RUS
 </label>
 <label for="eng">
-  <input type="radio" name="lang" onchange="swapLng(this)" id="eng">ENG
+  <input type="radio" name="lang" onclick="swapLng(this)" id="eng">ENG
 </label>
-</div>
+
 
   <div id="ukrSetting">
     Привіт username,
@@ -36,19 +38,14 @@
   Hello username,
     <p>
       <label for="a1">We glad to see you</label>
-
     </p>
   </div>
-  <div id="betaSettings" style="display:none">
-    <br/>Beta Settings
-    <p>
-      <label for="b1">Beta</label>
-
-      </p>
-  </div>
 
 
-<button id="save">Save</button>
+<button id="save" onclick="saveLng()">Save</button>
+
 </fieldset>
+<script src="js/mult.js"></script>
+<script>readLng()</script>
   </body>
 </html>
